@@ -1,1 +1,157 @@
 /* место для вашего кода */
+
+/* Секция header */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  column-gap: 43px;
+  padding: 92px 50px 94px;
+}
+
+.header__links-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 33px;
+}
+
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link {
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.header__link_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  display: block;
+  min-width: 135px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000;
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.35;
+  .address__link {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
+
+.header__address {
+  justify-self: end;
+  max-width: 240px;
+}
+
+/* Секция cover */
+
+.cover {
+  position: relative;
+  z-index: 1;
+  min-height: 757px;
+  padding: 165px 50px 50px;
+  background-image: url(../images/cover.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.6;
+  background-color: #000;
+}
+
+.cover__title {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+  display: block;
+}
+
+.aligned-text_center {
+  padding-left: 30px;
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+  transform: translateX(30px);
+}
+
+.cover__description {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 106px;
+}
+
+.cover__description-text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.27;
+  text-transform: uppercase;
+  word-spacing: 19px;
+  span {
+    letter-spacing: 1.1em;
+  }
+}
+
+.bet-button {
+  border: 1px solid #fff;
+  padding: 12px 32px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  background: transparent;
+  cursor: pointer;
+}
+
+.lots {
+  padding: 180px 24px 0;
+}
+
+.lots__title {
+  font-weight: 700;
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #000;
+  margin-left: 40px;
+}
